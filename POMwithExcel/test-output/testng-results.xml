@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-23T21:44:32 IST" name="Default suite" finished-at="2024-12-23T21:49:57 IST" duration-ms="324585">
+    <groups>
+    </groups>
+    <test started-at="2024-12-23T21:44:32 IST" name="Default test" finished-at="2024-12-23T21:49:57 IST" duration-ms="324585">
+      <class name="testcases.TC_003_CreateAccount">
+        <test-method is-config="true" signature="setValue()[pri:0, instance:testcases.TC_003_CreateAccount@7e6f74c]" started-at="2024-12-23T21:44:32 IST" name="setValue" finished-at="2024-12-23T21:44:32 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValue -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testcases.TC_003_CreateAccount@7e6f74c]" started-at="2024-12-23T21:44:33 IST" name="preCondition" finished-at="2024-12-23T21:46:22 IST" duration-ms="109096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="createAccount(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_003_CreateAccount@7e6f74c]" started-at="2024-12-23T21:46:22 IST" name="createAccount" data-provider="getData" finished-at="2024-12-23T21:49:34 IST" duration-ms="191497" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tester1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ManualTester]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TestLeaf]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["50"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[java.util.concurrent.TimeoutException
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [33683b2ed72ea2ca8bc8820c7e379e2b, clickElement {id=f.1B687DA3BBAA6155ADBD529FCD5800B8.d.2EF13E7818161ABD80B8164AF02470E0.e.17}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\seeni\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50959}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50959/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (33683b2ed72ea2ca8bc8820c7e379e2b)] -> link text: CRM/SFA]
+Session ID: 33683b2ed72ea2ca8bc8820c7e379e2b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [33683b2ed72ea2ca8bc8820c7e379e2b, clickElement {id=f.1B687DA3BBAA6155ADBD529FCD5800B8.d.2EF13E7818161ABD80B8164AF02470E0.e.17}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\seeni\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50959}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50959/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (33683b2ed72ea2ca8bc8820c7e379e2b)] -> link text: CRM/SFA]
+Session ID: 33683b2ed72ea2ca8bc8820c7e379e2b
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at pages.WelcomePage.clickOnCrmsfa(WelcomePage.java:15)
+at testcases.TC_003_CreateAccount.createAccount(TC_003_CreateAccount.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:2004)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2139)
+at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+... 38 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccount -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testcases.TC_003_CreateAccount@7e6f74c]" started-at="2024-12-23T21:49:34 IST" name="postCondition" finished-at="2024-12-23T21:49:36 IST" duration-ms="1818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testcases.TC_003_CreateAccount@7e6f74c]" started-at="2024-12-23T21:49:36 IST" name="preCondition" finished-at="2024-12-23T21:49:40 IST" duration-ms="4676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="createAccount(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_003_CreateAccount@7e6f74c]" started-at="2024-12-23T21:49:40 IST" name="createAccount" data-provider="getData" finished-at="2024-12-23T21:49:46 IST" duration-ms="5749" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tester2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AutomationTester]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Qeagle]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["60"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccount -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testcases.TC_003_CreateAccount@7e6f74c]" started-at="2024-12-23T21:49:46 IST" name="postCondition" finished-at="2024-12-23T21:49:46 IST" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testcases.TC_003_CreateAccount@7e6f74c]" started-at="2024-12-23T21:49:46 IST" name="preCondition" finished-at="2024-12-23T21:49:52 IST" duration-ms="5553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="createAccount(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_003_CreateAccount@7e6f74c]" started-at="2024-12-23T21:49:52 IST" name="createAccount" data-provider="getData" finished-at="2024-12-23T21:49:57 IST" duration-ms="5055" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tester3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SoftwareTester]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Hcl]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA["100"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccount -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testcases.TC_003_CreateAccount@7e6f74c]" started-at="2024-12-23T21:49:57 IST" name="postCondition" finished-at="2024-12-23T21:49:57 IST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testcases.TC_003_CreateAccount -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
