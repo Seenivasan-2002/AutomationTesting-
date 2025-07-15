@@ -6,3 +6,4 @@ git  status
 git commit -m "LearnG.txt file added"
 git push origin main
 
+after modifyadd
